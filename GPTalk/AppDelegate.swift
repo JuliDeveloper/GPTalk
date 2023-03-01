@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  GPTalk
-//
-//  Created by Julia Romanenko on 01.03.2023.
-//
-
 import UIKit
 
 @main
