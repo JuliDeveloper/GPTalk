@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		255B086B29AFC86700A599E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255B086A29AFC86700A599E3 /* AppDelegate.swift */; };
 		255B086D29AFC86700A599E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255B086C29AFC86700A599E3 /* SceneDelegate.swift */; };
-		255B086F29AFC86700A599E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255B086E29AFC86700A599E3 /* ViewController.swift */; };
-		255B087229AFC86700A599E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 255B087029AFC86700A599E3 /* Main.storyboard */; };
 		255B087429AFC86800A599E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 255B087329AFC86800A599E3 /* Assets.xcassets */; };
 		255B087729AFC86800A599E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 255B087529AFC86800A599E3 /* LaunchScreen.storyboard */; };
+		255B087F29AFC94B00A599E3 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255B087E29AFC94B00A599E3 /* WebViewViewController.swift */; };
+		255B088129AFC97900A599E3 /* Extension + UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255B088029AFC97900A599E3 /* Extension + UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		255B086729AFC86700A599E3 /* GPTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		255B086A29AFC86700A599E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		255B086C29AFC86700A599E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		255B086E29AFC86700A599E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		255B087129AFC86700A599E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		255B087329AFC86800A599E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		255B087629AFC86800A599E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		255B087829AFC86800A599E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		255B087E29AFC94B00A599E3 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
+		255B088029AFC97900A599E3 /* Extension + UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIColor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +58,8 @@
 			children = (
 				255B086A29AFC86700A599E3 /* AppDelegate.swift */,
 				255B086C29AFC86700A599E3 /* SceneDelegate.swift */,
-				255B086E29AFC86700A599E3 /* ViewController.swift */,
-				255B087029AFC86700A599E3 /* Main.storyboard */,
+				255B087E29AFC94B00A599E3 /* WebViewViewController.swift */,
+				255B088029AFC97900A599E3 /* Extension + UIColor.swift */,
 				255B087329AFC86800A599E3 /* Assets.xcassets */,
 				255B087529AFC86800A599E3 /* LaunchScreen.storyboard */,
 				255B087829AFC86800A599E3 /* Info.plist */,
@@ -127,7 +127,6 @@
 			files = (
 				255B087729AFC86800A599E3 /* LaunchScreen.storyboard in Resources */,
 				255B087429AFC86800A599E3 /* Assets.xcassets in Resources */,
-				255B087229AFC86700A599E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +137,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				255B086F29AFC86700A599E3 /* ViewController.swift in Sources */,
 				255B086B29AFC86700A599E3 /* AppDelegate.swift in Sources */,
+				255B088129AFC97900A599E3 /* Extension + UIColor.swift in Sources */,
+				255B087F29AFC94B00A599E3 /* WebViewViewController.swift in Sources */,
 				255B086D29AFC86700A599E3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +147,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		255B087029AFC86700A599E3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				255B087129AFC86700A599E3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		255B087529AFC86800A599E3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,7 +276,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DWMGJ928Y5;
@@ -292,9 +283,11 @@
 				INFOPLIST_FILE = GPTalk/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,6 +295,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.JuliDeveloper.GPTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,7 +308,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DWMGJ928Y5;
@@ -320,9 +315,11 @@
 				INFOPLIST_FILE = GPTalk/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,6 +327,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.JuliDeveloper.GPTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
